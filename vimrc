@@ -8,8 +8,12 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'https://github.com/altercation/solarized.git'
 Plugin 'https://github.com/scrooloose/nerdtree.git'
 Plugin 'https://github.com/klen/python-mode.git'
+Plugin 'https://github.com/saltstack/salt-vim.git'
 Plugin 'majutsushi/tagbar'
 Plugin 'ctags.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -19,6 +23,9 @@ filetype plugin indent on    " required
 "set plugin nmap
 map <C-m> :TagbarToggle<CR>
 map <C-n> :NERDTreeToggle<CR>
+"let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 "set python-mode
 " this lin is python-mode bind shortcut
@@ -48,4 +55,13 @@ let g:pymode_folding = 0
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 set nu
+set ruler
+set showcmd
+let mapleader="'"
+nnoremap q :q<CR>
+""" 配置tab键
+set tabstop=4        "number of visual spaces per TAB
+set softtabstop=4    "number of spaces in TAB when editing
+set expandtab        "TABS are spaces
+set shiftwidth=4     "使用每层缩进的空格数
 
