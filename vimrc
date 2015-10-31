@@ -23,7 +23,7 @@ set shiftwidth=4
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
-Plugin 'https://github.com/altercation/solarized.git'
+Plugin 'https://github.com/altercation/vim-colors-solarized.git'
 Plugin 'https://github.com/scrooloose/nerdtree.git'
 Plugin 'https://github.com/klen/python-mode.git'
 Plugin 'https://github.com/saltstack/salt-vim.git'
