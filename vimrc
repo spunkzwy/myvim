@@ -1,5 +1,7 @@
 " define base
 set nocompatible
+set ignorecase
+set smartcase
 filetype off
 set nu
 set ruler
@@ -21,7 +23,7 @@ Plugin 'https://github.com/scrooloose/nerdtree.git'
 Plugin 'https://github.com/klen/python-mode.git'
 Plugin 'https://github.com/saltstack/salt-vim.git'
 Plugin 'https://github.com/tpope/vim-surround.git'
-Plugin 'majutsushi/tagbar'
+Plugin 'https://github.com/majutsushi/tagbar.git'
 Plugin 'ctags.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'SirVer/ultisnips'
@@ -51,3 +53,5 @@ nnoremap <silent> ]b :bnext<CR>
 nnoremap <silent> [B :bfirst<CR>
 nnoremap <silent> ]b :blast<CR>
 nnoremap q :q<CR>
+nnoremap <Leader>tt :TagbarToggle<CR>
+nnoremap <Leader>nn :NERDTreeToggle<CR>
