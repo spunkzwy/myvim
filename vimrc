@@ -1,7 +1,7 @@
 " Use the Solarized Dark theme
 syntax enable
 set background=dark
-colorscheme solarized
+" colorscheme solarized
 
 " define base
 set nocompatible
@@ -33,6 +33,7 @@ Plugin 'ctags.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'scrooloose/nerdcommenter'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
