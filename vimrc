@@ -1,6 +1,6 @@
 " Use the Solarized Dark theme
 syntax enable
-set background=dark
+set background=light
 colorscheme solarized
 " define base
 set nocompatible
@@ -53,13 +53,10 @@ let g:pymode_doc_bind = "<C-S-d>"
 call pymode#default('g:pymode_rope_autoimport', 0)
 let g:pymode_folding = 0
 " airline
+let g:airline_powerline_fonts = 1
 set laststatus=2
 set t_Co=256
 let g:airline#extensions#tabline#enabled = 1
-"let g:airline_theme="luna"
-let g:airline#extensions#tabline#tab_nr_type = 0 
-let g:airline#extensions#tabline#buffer_idx_mode = 1
-"let g:airline#extensions#tabline#show_tab_nr = 0
 nmap <leader>1 <Plug>AirlineSelectTab1
 nmap <leader>2 <Plug>AirlineSelectTab2
 nmap <leader>3 <Plug>AirlineSelectTab3
