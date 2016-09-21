@@ -28,13 +28,14 @@ Plugin 'https://github.com/klen/python-mode.git'
 Plugin 'https://github.com/saltstack/salt-vim.git'
 Plugin 'https://github.com/tpope/vim-surround.git'
 Plugin 'https://github.com/majutsushi/tagbar.git'
-Plugin 'git://github.com/rodjek/vim-puppet.git'
 Plugin 'bling/vim-airline'
+Plugin 'Raimondi/delimitMate'
 Plugin 'ctags.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'mattn/emmet-vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -55,8 +56,7 @@ call pymode#default('g:pymode_rope_autoimport', 0)
 let g:pymode_folding = 0
 " airline
 let g:airline_powerline_fonts = 1
-" let g:airline_section_a = mode
-set laststatus=1
+set laststatus=2
 set t_Co=256
 let g:airline#extensions#tabline#enabled = 1
 nmap <leader>1 <Plug>AirlineSelectTab1
